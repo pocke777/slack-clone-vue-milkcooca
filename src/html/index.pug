@@ -1,0 +1,25 @@
+extends /layout/_application
+
+block content
+  .client-container
+    .client-channels
+      .title Trunk
+
+      .subtitle
+        | Channels
+        i.icon.ion-md-add-circle-outline
+      li.items
+        ul.item #room_cat
+        ul.item #room_dog
+    .client-messages
+      header.header
+        .title #room_cat
+      .body
+          message(v-for="message in messages" :message="message")
+
+
+      footer.footer
+        .message-footer
+          div.input-wrapper
+            textarea.input-area(placeholder="Message #root_cat" v-model="inputText")
+            i.send.icon.ion-ios-send(v-on:click="send")

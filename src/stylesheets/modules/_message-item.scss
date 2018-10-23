@@ -1,0 +1,40 @@
+.message-item {
+  &:not(:root) {
+    display: flex;
+    align-items: flex-start;
+    padding: 4px 16px;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  > .body > .info {
+    display: flex;
+    align-items: center;
+  }
+
+  > .body > .info > .name {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  > .body > .info > .time {
+    font-size: 1.2rem;
+    color: #717274;
+  }
+
+  > .body > .text {
+    white-space: pre-line;
+    word-break: break-all;
+
+  }
+
+  > .icon {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+}

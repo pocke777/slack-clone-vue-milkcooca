@@ -1,0 +1,34 @@
+.client-messages {
+  &:not(:root) {
+    flex-grow: 1;
+    position: relative;
+  }
+
+  > .header {
+    height: 48px;
+    border-bottom: 1px solid #919193;
+    width: 100%;
+  }
+
+  > .header > .title {
+    line-height: 48px;
+    font-weight: bold;
+    margin-left: 16px;
+  }
+
+  > .body {
+    overflow-y: scroll;
+    height: calc(100% - 49px);
+    padding-bottom: 66px;
+    box-sizing: border-box;
+  }
+
+  > .footer {
+    height: 66px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+  }
+}

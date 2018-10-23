@@ -1,0 +1,43 @@
+.message-footer {
+
+  &:not(:root) {
+    position: relative;
+  }
+
+  > .input-wrapper {
+    position: relative;
+    width: 92%;
+    height: 48px;
+    margin: 0 auto;
+  }
+
+  > .input-wrapper > .input-area {
+    border: 2px solid rgba(145,145,147,.7);
+    resize: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 6px;
+    box-sizing: border-box;
+    outline: none;
+    height: 48px;
+
+    &:focus {
+      border-color: #717274;
+    }
+  }
+
+  > .input-wrapper > .send {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    color: rgba(145,145,147,.7);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  > .input-wrapper > .input-area:focus + .send {
+    color: #56b68b;
+  }
+}

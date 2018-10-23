@@ -1,0 +1,43 @@
+.client-channels {
+
+  &:not(:root) {
+    width: 260px;
+    background-color: #4d394b;
+    height: 100%;
+    color: rgb(202,196,201);
+    box-sizing: border-box;
+  }
+
+  > .title {
+    font-size: 2rem;
+    padding: 0 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  > .subtitle {
+    font-size: 1.8rem;
+    padding: 0 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  > .subtitle .icon {
+    margin: 0 8px;
+  }
+
+  > .items {
+  }
+
+  > .items .item {
+    padding: 0 16px*2;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3E313C;
+    }
+  }
+}
