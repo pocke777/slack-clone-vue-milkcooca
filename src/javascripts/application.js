@@ -20,13 +20,17 @@ const app = new Vue({
   },
   data: {
     messages: [],
-    inputText: ""
+    inputText: "",
+    visibled: false,
   },
   methods: {
     send () {
       const now = new Date();
       ds.push({name : 'kawasaki', send_at: now, content : this.inputText, icon: 'https://avatars1.githubusercontent.com/u/6297063?s=460&v=4'});
       this.inputText = ""
+    },
+    toggleModal() {
+      this.visibled = !this.visibled;
     }
   }
 })

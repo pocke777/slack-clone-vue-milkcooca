@@ -13,5 +13,16 @@
     background-color: white;
     width: 480px;
     height: 480px;
+    position: relative;
+  }
+
+  > .content > .closebtn {
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+    color: #717274;
   }
 }
