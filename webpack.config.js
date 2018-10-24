@@ -2,6 +2,14 @@ const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path')
 const CompressionPlugin = require("compression-webpack-plugin")
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack')
+require('dotenv').config()
+
+const defineEnv = new webpack.DefinePlugin({
+  'process.env': {
+    'API_KEY': JSON.stringify(process.env.API_KEY)
+  }
+});
 
 // base config
 const SRC = './src'
@@ -66,6 +74,7 @@ module.exports = {
     }
   },
   plugins: [
+    defineEnv,
     new VueLoaderPlugin(),
     new CompressionPlugin({
       test: /\.js/

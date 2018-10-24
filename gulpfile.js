@@ -79,7 +79,7 @@ gulp.task('browser-sync', function() {
 
   gulp.watch('src/html/**/*.pug', ['pug', 'reload']);
   gulp.watch('src/stylesheets/**/*.scss', ['sass', 'reload']);
-  gulp.watch('src/javascripts/**/*.js', ['javascript', 'reload']);
+  gulp.watch('src/javascripts/**/*.{js, vue}', ['javascript', 'reload']);
   gulp.watch('src/images/**/*', ['image', 'reload']);
 });
 
