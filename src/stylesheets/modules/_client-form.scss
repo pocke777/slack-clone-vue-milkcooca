@@ -1,0 +1,20 @@
+.client-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  > .input {
+    width: 240px;
+    height: 40px;
+    display: block;
+    margin-top: 48px;
+  }
+
+  > .formbtn {
+    width: 240px;
+    height: 40px;
+    background-color: #4d394b;
+    color: white;
+    margin-top: 24px;
+  }
+}

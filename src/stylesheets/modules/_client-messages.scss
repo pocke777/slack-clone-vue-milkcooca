@@ -8,12 +8,23 @@
     height: 48px;
     border-bottom: 1px solid #919193;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 
   > .header > .title {
     line-height: 48px;
     font-weight: bold;
-    margin-left: 16px;
+  }
+
+  > .header > .setting {
+    color:#717274;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
   > .body {

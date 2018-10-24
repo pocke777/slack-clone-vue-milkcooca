@@ -14,6 +14,7 @@ block content
     .client-messages
       header.header
         .title #room_cat
+        i.setting.icon.ion-md-settings
       .body
           message(v-for="message in messages" :message="message")
 
@@ -23,3 +24,12 @@ block content
           div.input-wrapper
             textarea.input-area(placeholder="Message #root_cat" v-model="inputText")
             i.send.icon.ion-ios-send(v-on:click="send")
+
+  aside.client-modal
+    .content
+      .client-form
+        input.input(type="text" placeholder="icon")
+        input.input(type="text" placeholder="username")
+        button.formbtn Submit
+
+

@@ -1,26 +1,5 @@
 import Message from 'components/Message'
 
-const messages = [
-  {
-    name: 'scottish-fold',
-    time: '11:10 AM',
-    icon: 'images/pickrusu.jpg',
-    text: 'これはサンプルテキストですこれはサンプルテキストです\nこれはサンプルテキストです\nこれはサンプルテキストですこれはサンプルテキストですこれはサンプルテキストです',
-  },
-  {
-    name: 'scottish-fold',
-    time: '11:10 AM',
-    icon: 'images/pickrusu.jpg',
-    text: 'これはサンプルテキストですこれはサンプルテキストです\nこれはサンプルテキストです\nこれはサンプルテキストですこれはサンプルテキストですこれはサンプルテキストです',
-  },
-  {
-    name: 'scottish-fold',
-    time: '11:10 AM',
-    icon: 'images/pickrusu.jpg',
-    text: 'これはサンプルテキストですこれはサンプルテキストです\nこれはサンプルテキストです\nこれはサンプルテキストですこれはサンプルテキストですこれはサンプルテキストです',
-  }
-]
-
 const milkcocoa = new MilkCocoa(process.env.API_KEY);
 const ds = milkcocoa.dataStore('sample');
 
