@@ -29,8 +29,8 @@ block content
     .content
       i.closebtn.icon.ion-md-close-circle-outline(v-on:click="toggleModal")
       .client-form
-        input.input(type="text" placeholder="icon")
-        input.input(type="text" placeholder="username")
-        button.formbtn Submit
+        input.input(type="text" placeholder="icon" v-model="icon")
+        input.input(type="text" placeholder="username" v-model="name")
+        button.formbtn(v-on:click="toggleModal") Submit
 
 

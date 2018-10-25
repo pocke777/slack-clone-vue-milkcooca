@@ -22,11 +22,13 @@ const app = new Vue({
     messages: [],
     inputText: "",
     visibled: false,
+    name: "sample",
+    icon: "https://pocke777.github.io/slides/assets/icon.png"
   },
   methods: {
     send () {
       const now = new Date();
-      ds.push({name : 'kawasaki', send_at: now, content : this.inputText, icon: 'https://avatars1.githubusercontent.com/u/6297063?s=460&v=4'});
+      ds.push({name : this.name, send_at: now, content : this.inputText, icon: this.icon});
       this.inputText = ""
     },
     toggleModal() {
